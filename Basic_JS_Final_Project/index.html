@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>index</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+		</style> 
+	</head>
+	
+	<body class="p-3 mb-2 bg-warning text-dark">
+		<div class="container-flex">
+			<div class="container">
+				<div class= "row p-4">
+					<div class="col-md-6 offset-md-3 p-3 mb-2 bg-warning border" style="text-align: center;">
+						<h1>Make your Selection</h1>
+					</div>
+				</div>
+				<div class="row border rounded">
+					<div class="col border-right">
+						<h3>Size:</h3>
+						<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+						<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+						<input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+						<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+					</div>
+					<div class="col border-right">
+						<h3>Protein:</h3>
+						<input class="protein" type="checkbox" name="Protein" value="Tofu"> Tofu<br>
+						<input class="protein" type="checkbox" name="Protein" value="Tempeh"> Tempeh <br>
+						<input class="protein" type="checkbox" name="Protein" value="Chickpea"> Chickpea<br> 
+						<input class="protein" type="checkbox" name="Protein" value="Fried Tofu"> Fried Tofu<br>
+						<input class="protein" type="checkbox" name="Protein" value="Anchovy"> Anchovy<br>
+						<input class="protein" type="checkbox" name="Protein" value="Salmon"> Salmon<br>
+					</div>
+					<div class="col">
+						<h3>Cheese:</h3>
+						<input class="cheese" type="radio" name="Cheese" value="Regular"> Regular<br>
+						<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+						<input class="cheese" type="radio" name="Cheese" value="Extra Cheese" checked>Extra Cheese<br>
+					</div>
+				</div>
+				<div class="row border rounded">
+					<div class="col border-right">
+						<h3>Crust:</h3>
+						<input class="crust" type="radio" name="Crust" value="Plain Crust"> Plain Crust<br>
+						<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+						<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust" checked> Cheese Stuffed Crust<br>
+						<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+						<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>					
+					</div>
+					<div class="col border-right">
+						<h3>Sauce:</h3>
+						<input class="sauce" type="radio" name="Sauce" value="Marinara Sauce"> Marinara Sauce<br>
+						<input class="sauce" type="radio" name="Sauce" value="Barbeque Sauce"> Barbeque Sauce<br>
+						<input class="sauce" type="radio" name="Sauce" value="White Sauce">White Sauce<br>
+						<input class="sauce" type="radio" name="Sauce" value="No Sauce" checked>No Sauce<br>
+					</div>
+					<div class="col">
+						<h3>Veggies:</h3>
+						<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> Tomatoes<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Onions"> Onions <br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives<br> 
+						<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Mushrooms<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Spinach<br>
+						<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> Jalapeno<br>
+					</div>
+				</div>
+				<div class="row my-4">
+					<div class="col-4 align-self-start">
+						<input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div id="showText"  class="text-danger"></div>
+					</div>
+					<div class="col-6">
+						<div id="totalPrice" class="text-danger"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+    <script src="final_drill_basic.js"></script>
+ 	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
